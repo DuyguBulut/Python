@@ -19,7 +19,7 @@ print("hello", "world", sep=".")  # yazılan kelimeler arasina . koyarak yaziyor
 
 #Example for area calculation
 pi = 3.14  #burada pi değerine 3.14 ataniyor
-diameter = input("Please enter diameter of radius > ") #kllanicidan diameter icin deger girmesi isteniyor
+diameter = input("Please enter diameter of radius > ") #kullanicidan diameter icin deger girmesi isteniyor
 #find radius
 #radius = int(diameter)/2  #sayi girsek bile karakter olarak algiliyor input, bu yuzden integer a cast ediliyor
 
