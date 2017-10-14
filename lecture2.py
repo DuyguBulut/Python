@@ -18,17 +18,8 @@ print(total)         #döngü bittikten sonra, total değerini ekrana bas.
 for i in range(4,12):   #4 ten 12 ye kadar bir aralığa sahibiz 
     if(i%2== 0):        # 4 ile 12 arasındaki sayılardan çift olanları bul, ekrana bas.
         print(i)
-
-#function defining
-def f():
-    #bi tab icerde yazinca scope a dahil
-    #burada fonksiyonda yapılması istenen şeyler yer alıyor.
-    #fonksiyona dahil olmasını istemediğimiz şeyleri scope alanının dışında yazmalıyız.
-
-#function call
-f()   #diğer programlama dillerinde olduğu gibi çağrılıyor
-
-#Example 
+        
+#For Loop Example 
 x = input("enter a number")  #kullanıcıdan alınan değer
 x = int(x)  #integer a cast ediliyor
 
@@ -49,5 +40,38 @@ for i in range(0,x):  #aralık, 0 dan kullanıcıdan alınan değere kadar
 010
 001
 '''
+#function defining
+def f():
+    #bi tab icerde yazinca scope a dahil
+    #burada fonksiyonda yapılması istenen şeyler yer alıyor.
+    #fonksiyona dahil olmasını istemediğimiz şeyleri scope alanının dışında yazmalıyız.
+
+#function call
+f()   #diğer programlama dillerinde olduğu gibi çağrılıyor
+
+#Example Functions
+def sum(x,y):         #fonksiyon tanımı
+    toplam= x+y       #scope alanı
+    return toplam     #bir değer return ediyor
+
+k =sum(3,5)   # 3 ve 5 i topla, sonucu k değerine ata.
+print(k)      #toplama sonucunu ekrana bas.
+
+#ortalama hesaplama fonksiyonu
+def calculate_average(mid1, mid2, mid3, final, student_name):
+
+    mid_avg = (mid1+ mid2 +mid3)/3
+
+    mid_wei = mid_avg*60
+
+    final_wei = final*40
+
+    total_score = mid_wei + final_wei
+
+    print(student_name + "s final score is" + total_score)
+    
+#fonksiyonun çağrılması
+calculate_average(60,70,80,80, "")
+
 
 
