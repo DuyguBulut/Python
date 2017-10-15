@@ -1,5 +1,4 @@
 #While and For Loops and Function Defining
-
 #while loop
 
 n = int (input("enter numbers")) #kullanıcıdan input alıp, integer a cast ediliyor ve n değişkenine atanıyor.
@@ -35,11 +34,10 @@ for i in range(0,x):  #aralık, 0 dan kullanıcıdan alınan değere kadar
     print("\n")
 
 #kullanıcı 3 girdiğinde output şöyle oluyor
-'''
-100
-010
-001
-'''
+# 1 0 0
+# 0 1 0
+# 0 0 1
+
 #function defining
 def f():
     #bi tab icerde yazinca scope a dahil
@@ -68,10 +66,10 @@ def calculate_average(mid1, mid2, mid3, final, student_name):
 
     total_score = mid_wei + final_wei
 
-    print(student_name + "s final score is" + total_score)
+    print(student_name , "s final score is" , total_score)
     
 #fonksiyonun çağrılması
-calculate_average(60,70,80,80, "")
+calculate_average(60,70,80,80, "duygu bulut")
 
 
 
